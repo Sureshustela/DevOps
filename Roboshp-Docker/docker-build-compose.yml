@@ -18,7 +18,7 @@ services:
 
   rabbitmq:
     build:
-    context: ./rabbitmq
+      context: ./rabbitmq
     image: rabbitmq:v1
 
   catalogue:
