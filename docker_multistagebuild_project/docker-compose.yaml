@@ -1,5 +1,5 @@
 services:
-  catalogue:
+  category:
     build:
       context: ./catalogue
       dockerfile: Dockerfile
