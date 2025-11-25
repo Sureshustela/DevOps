@@ -1,10 +1,10 @@
 services:
-  category:
+  catalogue:
     build:
       context: ./catalogue
       dockerfile: Dockerfile
     image: joindevops/catalogue:v1
-    container_name: catalogue
+    container_name: cat
     depends_on:
     - mongodb
   mongodb:
