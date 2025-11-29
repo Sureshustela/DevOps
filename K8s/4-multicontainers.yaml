@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: multicontainer-pod
+  namespace: roboshop
+  lables:
+    environment: prod
+    project: roboshop
+    purpose: multicontainer
+
+spec:
+  containers:
+  - name: nginx-c
+    image: nginx
+  
+  - name: nginx-dummy
+    image: almalinux:9
+    command: ["sleep","10000"]
+  
