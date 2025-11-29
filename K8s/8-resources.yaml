@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: resouce-demo
+
+spec:
+  containers:
+  - name: nginx-r
+    image: nginx
+    resources:
+      requests:
+        memory: "68Mi" #equals to 68MB
+        cpu: "100m" # 1/10th of 1CPU
+      limits:
+        memory: "100Mi"
+        cpu: "150m"
+
