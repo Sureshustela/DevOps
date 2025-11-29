@@ -4,8 +4,6 @@ metadata:
   name: multicontainer-pod
   namespace: roboshop
   lables:
-    environment: prod
-    project: roboshop
     purpose: multicontainer
 
 spec:
