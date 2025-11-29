@@ -1,12 +1,13 @@
+#this will create cluster using "ClusterConfig" kind
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
-
 metadata:
   name: cluster-1
   region: us-east-1
+
+#this will create nodes in cluster
 managedNodeGroups:
   - name: cluster1-ng
     instanceTypes: ["t3.micro"]
     desiredCapacity: 2  # if we don't give desired capacity, by default it will create 3 worked nodes
     spot: true
-
