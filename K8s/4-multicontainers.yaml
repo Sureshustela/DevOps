@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: multicontainer-pod
   namespace: roboshop
-  lables:
+  labels:
     purpose: multicontainer
 
 spec:
