@@ -11,4 +11,4 @@ metadata:
 spec:
   containers:
   - name: frontend
-    image: nginxxx
+    image: nginx
