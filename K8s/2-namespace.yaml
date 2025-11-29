@@ -3,6 +3,7 @@ kind: Namespace
 
 metadata:
   name: roboshop
+  #labels are useful to filter and select the specific details
   labels:
     environment: development
     project: roboshop
