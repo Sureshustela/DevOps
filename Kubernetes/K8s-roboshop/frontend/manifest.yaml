@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: usuresh123456/frontend:v4
+        image: usuresh123456/frontend:v5
         imagePullPolicy: Always
         ports:
         - name: liveness-port
