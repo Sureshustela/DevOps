@@ -32,4 +32,5 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: 
+        image: usuresh123456/mongodb:v1
+      
