@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
       - name: cart
-        image: joindevops/cart:v1
+        image: usuresh123456/cart:v1
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
