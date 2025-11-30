@@ -6,13 +6,17 @@ metadata:
   labels:
     purpose: rs-demo
     project: roboshop
+
+
 spec:
-  replicas: 10
+  replicas: 4
   selector:
     # these labels are used to select pods
     matchLabels:
       purpose: rs-demo
       project: roboshop
+
+
   # pod definition
   template:
     metadata:
