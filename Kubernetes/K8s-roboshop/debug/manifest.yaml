@@ -1,2 +1,13 @@
 apiVersion: v1
 kind: Pod
+metadata:
+  name: debug
+  namespace: roboshop
+  labels:
+    project: roboshop
+    environment: development
+
+spec:
+  containers:
+  - name: debug
+    image: usuresh123456/debug:v1
