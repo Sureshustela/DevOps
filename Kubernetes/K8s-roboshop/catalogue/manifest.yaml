@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: catalogue
-        image: joindevops/catalogue:v1
+        image: usuresh123456/catalogue:v1
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
@@ -44,7 +44,7 @@ spec:
         ports:
         - name: liveness-port
           containerPort: 8080
-          
+
         readinessProbe:
           httpGet:
             path: /health
